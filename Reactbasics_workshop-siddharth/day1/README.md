@@ -16,7 +16,7 @@ This is a single-page personal portfolio website built with HTML, CSS, and JavaS
 3. (Optional) Edit the content in `index.html` and `script.js` to personalize your profile and projects.
 
 ## Screenshots
-![img1.png](/assets/image.png)
+![img1](/Reactbasics_workshop-siddharth/day1/assets/image.png)
 ---
 
 **Created for Day 1: HTML, CSS, JavaScript – The Frontend Bedrock Exercise** 
