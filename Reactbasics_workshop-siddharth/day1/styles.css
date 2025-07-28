@@ -1,0 +1,101 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+header, footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+main {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+#projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 700px) {
+  #projects-list {
+    grid-template-columns: 1fr;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+/* Box model */
+input, textarea, button {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #555;
+}
+.error {
+  color: #d00;
+  font-size: 0.9em;
+  display: block;
+}
+.success {
+  color: #080;
+  font-size: 1em;
+  display: block;
+  margin-top: 0.5rem;
+}
+/* Light/Dark mode */
+body.dark-mode {
+  background: #181818;
+  color: #eee;
+}
+body.dark-mode header, body.dark-mode footer {
+  background: #111;
+  color: #eee;
+}
+body.dark-mode section {
+  background: #222;
+  color: #eee;
+}
+body.dark-mode input, body.dark-mode textarea {
+  background: #333;
+  color: #eee;
+  border: 1px solid #444;
+}
+body.dark-mode button {
+  background: #444;
+  color: #eee;
+} 
